@@ -25,7 +25,11 @@ private:
 	CNode*		m_pHead;
 	CNode*		m_pTail;
 	int			m_iCard;
-
+public:
+	enum e_parseMode{
+		PARSE_BREAK = 0,
+		PARSE_INTEGRAL = 1
+	};
 public:
 	CContainer(t_ptfV pDeleteFunc);
 	~CContainer();
@@ -33,9 +37,8 @@ public:
 	int   Card();
 	void* Pushback(void*pElem);
 	void* Getback();
-	void* Parse(t_ptfVV pParseFunc, void*pParam);
+	void* Parse(t_ptfVV pParseFunc, void*pParam, e_parseMode mode=PARSE_BREAK);
 	void* ParseDelIf(t_ptfVV pParseFunc, void*pParam);
-	void* Popfront();
-	void* Getfront();
+	void* IntersectDelIf(t_ptfVV pIntersectFunc, CContainer* pOthers);
 
 };

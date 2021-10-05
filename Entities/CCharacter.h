@@ -11,10 +11,10 @@ using namespace std;
 #include <SDL2/SDL.h>
 #include <SDL2/SDL_image.h>
 
-#define CHARACTER_DEFAULT_SIZE		(48)
-#define CHARACTER_DEFAULT_COLOR		SDL_Color{0x50, 0x50, 0x50, 0xFF}
-#define CHARACTER_DEFAULT_SPEED		(1)
-#define CHARACTER_DEFAULT_DAMAGE	(25)
+#define CHARACTER_DEFAULT_SIZE			(48)
+#define CHARACTER_DEFAULT_COLOR			SDL_Color{0x50, 0x50, 0x50, 0xFF}
+#define CHARACTER_DEFAULT_SPEED			(1)
+#define CHARACTER_DEFAULT_DAMAGE		(25)
 
 #define CHARACTER_TEXTURE_PATH			"Resources/Character/character_atlas.png"
 
